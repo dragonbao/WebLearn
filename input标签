@@ -1,0 +1,2 @@
+<input type="text" placeholder="please input you number here" value="please">
+value属性的优先级大于placeholder,input框内显示的是value属性的值.

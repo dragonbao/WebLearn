@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试用</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        .div{
+            position: relative;
+            width:800px;
+            height:500px;
+            overflow: hidden;
+            margin:0 auto;
+            border:1px solid darkred;
+
+        }
+        .div2{
+            position: absolute;
+            margin-left: -800px;
+            z-index:2;
+            width:4000px;
+            height:500px;
+            background: lightslategray;
+            font-size:0px;
+            /*margin-left:-800px;*/
+            /*word-spacing:0;*/
+            /*letter-spacing: -100px;*/
+
+        }
+        .div2 img{
+            display: block;
+            float: left;
+            vertical-align: bottom;
+            /*word-spacing:0;*/
+            width:800px;
+            height:500px;
+        }
+        .btn{
+            position: absolute;
+            z-index:3;
+            left:340px;
+            top:430px;
+            list-style: none;
+            /*margin-top:310px;*/
+        }
+        ul li{
+            float: left;
+            cursor: pointer;
+            margin-left:20px;
+            text-align: center;
+            line-height:20px;
+            font-size:20px;
+            opacity: .5;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            width:20px;
+            height:20px;
+            background: lightgreen;
+        }
+        ul li:hover{
+            background-color:lightsalmon;
+            color: lightgreen;
+        }
+        .left-right-button{
+            position: absolute;
+            top:235px;
+            left: 0;
+            width:800px;
+            padding: 0;
+            height: 30px;
+            z-index: 3;
+            list-style: none;
+            /*background: red;*/
+        }
+        .left-right-button li{
+            line-height: 30px;
+            font-size: 28px;
+            font-weight: 800;
+            border-radius: 0;
+            margin: 0;
+            width: 30px;
+            height: 30px;
+            color: black;
+        }
+        .left-right-button li:last-child{
+            color: black;
+            margin-left: 740px;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="div">
+        <div class="div2">
+            <img src="../img/3.jpg">
+            <img src="../img/1.jpeg">
+            <img src="../img/2.jpg">
+            <img src="../img/3.jpg">
+            <img src="../img/1.jpeg">
+        </div>
+        <ul class="btn">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <ul class="left-right-button">
+            <li><</li>
+            <li>></li>
+        </ul>>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+//为了改进自执行的turnpic函数会一开始执行一次，使得第一次的图片间隔时间为0；
+//        创建一个a()函数来包装，注意此处不能用settimeout否则时间函数只执行一次。
+//settimeout函数只执行一次 settimeout setInterval 函数都是自执行函数。
+//        var ti = setTimeout(turnpic,2000)
+// 图片轮博效果触发
+            var timeout = setInterval(turnpic,3000);
+//
+//        var left = parseInt($(".div2").css("margin-left"));   
+//        turnpic();
+        function turnpic(){
+//            var timeout = setTimeout(turnpic,2000);
+            var left = parseInt($(".div2").css("margin-left"));
+            console.log(left)
+
+            if(left<=-3200){
+                $(".div2").css("margin-left",-800+"px");
+                $(".div2").css("transition","margin-left 0s");
+//                这里如果不执行一次下面的函数，将会停留四秒，settime函数不关心margin-left的变化，所以手动执行一次
+//                turnpic函数，这样看起看来就不会有停顿效果。
+                var time2 = setTimeout(turnpic,0);
+
+            }else {
+                var marginleft = parseInt($(".div2").css("margin-left")) - 800 + "px";
+                $(".div2").css("margin-left", marginleft);
+                $(".div2").css("transition","margin-left 1.8s");
+                clearTimeout(time2);
+            }
+        }
+        console.log($("ul li:eq(1)"));
+        $(".btn").on("click",function(e){
+            if(e.target.nodeName.toUpperCase()=="LI"){
+//                alert($(e.target).index())
+            if($(e.target).index()==0){
+                $(".div2").css("margin-left",-800+"px")
+                $(".div2").css("transition","margin-left 0.5s cubic-bezier(0.68,-0.55,0.27,1.55)");
+
+            }
+            else if($(e.target).index()==1){
+                $(".div2").css("marginLeft",-1600+"px");
+                 $(".div2").css("transition","margin-left 0.5s cubic-bezier(0.68,-0.55,0.27,1.55)");
+
+            }
+            else{
+                $(".div2").css("marginLeft",-2400+"px");
+                 $(".div2").css("transition","margin-left 0.5s cubic-bezier(0.68,-0.55,0.27,1.55)");
+            }
+            }
+        })
+    })
+</script>
+</body>
+</html>
+<!--<p style="word-spacing: 1em;letter-spacing: 1em">只是一个p标签-->
+<!--<span>只是一个span标签</span><span>span 标签的又一个</span>-->
+<!--<p>p里的p标签</p>-->
+<!--</p>-->
+<!--<p>又一个p标签</p>-->
+<!--多张图片一行排列时，图片之间会有缝隙存在，解决方法如下：
+1，img间不换行，像<p>标签之间的word-spacing letter-spacing,
+2,给img设置display:block float;left,
+3,font-size:0 letter-spacing:0 同时加在图片的父元素上,但是图片超出父元素的宽度时chrome不会自动换行，会超出。
+firefox会换行。
+-->

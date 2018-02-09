@@ -1,2 +1,5 @@
 <input type="text" placeholder="please input you number here" value="please">
 value属性的优先级大于placeholder,input框内显示的是value属性的值.
+form表单中
+  <input type="submit">与<button></button>是一样的，都是提交表单的功能，
+  在form表单中，<button>默认的type为submit;

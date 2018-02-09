@@ -1,0 +1,29 @@
+ //外部分别定义两个函数 fun1,fun2;
+ function fun1(){console.log("outside fun1")}
+ function fun2(){console.log("outside fun2")}
+ //外部分函数定义完毕;
+ 
+ //定义函数fun3，fun3内部包含fun1,fun2的同名函数
+    function fun3(){
+    console.log(typeof(fun1));//function
+    console.log(typeof(fun2));//undefined
+    fun1();//aa
+    fun2();//uncaught SytaxError fun2 is not a function.
+    function fun1(){console.log("aa")}
+    var fun2 = function(){console.log("bb")}
+    }
+    fun3();
+    
+    分析：
+          函数提升，函数执行时，会将函数体中包含的的函数名和函数体一起提升到函数的顶部，所以fun3中的fun1的定义在其执行之后，由于存在函数提升规则，
+          fun1依旧能够正确的执行，而函数执行的顺序的由内向外的，所以输出的是aa而不是外部定义的outside fun1.
+          变量提升：变量的提升与函数相似，但是不同的是，变量提升值提升变量名的定义，变量的内容含保留在原处，这里将一个匿名函数赋给变量fun2,
+          变量fub2的定义得到提升，但是他的内容->匿名函数没有得到提升，相当于var fun2;typeof(fun2)输出的是undefined. 而此时fun2()并不是一个函数.
+          
+    补充：
+        javascript中函数定义的几种方式
+         
+          1 function func(参数){/*函数体*/} //最常见的一种
+          2 var func = function(参数){/*函数体*/}//将匿名函数赋予变量，调用方式为func();
+          3 var func = function func1(参数){/*函数体*/}//将一个函数赋予变量，调用方式为func();
+          4 var func = new function(参数){/*函数体*/}//声明func为一个对象.调用方式func();

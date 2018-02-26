@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hover实现图片文字上浮效果</title><!-- transition+transform或者使用帧动画实现 IE9以上有效。-->
+    <!--此处不适和使用帧动画来完成，因为帧动画的动画完成后会返回原点，此时hover效果返回原点即transform:translateY(0px)。-->
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-size:14px;
+            font-height:28px;
+        }
+        .div1{
+            margin-right:10px;
+            float: left;
+            position: relative;
+            width:200px;
+            height:300px;
+            background: lightgoldenrodyellow;
+        }
+        .div1:hover .div2{
+            visibility: visible;
+            /*-webkit-animation:myanimation 0.3s*/
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+        .div1:hover{
+            -webkit-box-shadow: 2px 3px 8px lightslategray;
+        }
+        .div2{
+            position: absolute;
+            visibility: hidden;
+            left:0;
+            top:220px;
+            width:200px;
+            height:90px;
+            -webkit-transition: transform 0.3s;
+            -moz-transition: transform 0.5s;
+            -ms-transition: transform 0.5s;
+            -o-transition: transform 0.5s;
+            transition: transform 0.3s;
+            background-color: lightsalmon;
+        }
+        /*
+        @-webkit-keyframes myanimation{
+        from{transform:translateY(0px);}
+        }
+        to{
+        transform:translateY(-10PX);
+        }
+         @-moz-keyframes myanimation{
+        from{transform:translateY(0px);}
+        }
+        to{
+        transform:translateY(-10PX);
+        }
+         @keyframes myanimation{
+        from{transform:translateY(0px);}
+        }
+        to{
+        transform:translateY(-10PX);
+        }
+        */
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <p>用户ppc的评价：
+            这个手机真实很好看哦，买到就是赚到
+            没错 我就是你们所说的水军</p>
+        </div>
+    </div>
+    <div class="div1">
+        <div class="div2">
+            <p>用户ppc的评价：
+                这个手机真实很好看哦，买到就是赚到
+                没错 我就是你们所说的水军</p>
+        </div>
+    </div><div class="div1">
+        <div class="div2">
+            <p>用户ppc的评价：
+                这个手机真实很好看哦，买到就是赚到
+                没错 我就是你们所说的水军</p>
+        </div>
+    </div><div class="div1">
+        <div class="div2">
+            <p>用户ppc的评价：
+                这个手机真实很好看哦，买到就是赚到
+                没错 我就是你们所说的水军</p>
+        </div>
+    </div><div class="div1">
+        <div class="div2">
+            <p>用户ppc的评价：
+                这个手机真实很好看哦，买到就是赚到
+                没错 我就是你们所说的水军</p>
+        </div>
+    </div>
+</body>
+</html>

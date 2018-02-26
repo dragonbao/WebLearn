@@ -1,0 +1,36 @@
+1：自适应指的是在浏览网页时，不同分辨率下，网页的内容结构保持稳定，有良好的视觉效果。
+2：响应式布局，同一个网页，在PC端，手机mobile端，平板电脑上持有良好的表现力。
+3：自适应和响应式的区别：可以说响应式包括含自适应，一般而言，自适应是指根据浏览器屏幕宽度改变而改变网页中各元素的大小，
+   响应式是根据不同的设备展示不同的网页效果
+   
+自适应设计上应保持：
+                i:不使用绝对宽度，使用百分比代替。
+                ii：使用em或rem来改变容器和文字的大小。
+                iii:自适应也可以使用CSS的媒体属性media来做适应性布局，但是由于屏幕可以被缩放至任意的大小，其实媒体属性在此处并不很好用，
+                可以考虑结合em 和rem来使用或是css属性max-width,min-width 通过为元素设置这两个属性可以确保元素在一定范围类可变，
+                极端条件下（例如图片元素，当窗口很小时，给图片设置min-width,此时会有左右导航条存在）但能保持一定可读性。
+                关于图片的自适应布局需要设置max-width为100%;低版本IE不支持max-width,换为img(width:100%}。
+                iiii: em是字体的大小只适应度量单位，以父元素作为参考。1em = 父元素字体大小。
+                  rem(高清方案 root em,CSS3属性)rem不限于字体大小，width也可以使用rem设置，rem根据根节点参考大小
+
+响应式布局：
+          i：通过CSS3的属性media（媒体属性）来判断设备，为不同的设备匹配不同的样式。
+          具体的写法
+          @media mediaType and|only|not(media feather){
+          CSScode }          
+          其中media feather中 max-width:最大值，屏幕宽度超出这个值，该条件下的CSS样式不起作用。
+          min-width:最小值。小于这个值，该条件下的CSS样式不起作用。
+          
+          ii：也可以通过在引入的css文件中增加判断条件，决定是否引入该CSS文件。
+          <link rel="stylesheet" media="screen and (min-width:1440px)" href="./my.css">
+	        <link rel="stylesheet" media="screen and (max-width:1440px)" href="./my2.css">
+          或者@import url("index.css") screen and (max-width:760px);
+   
+补充：   
+    常用的几个屏宽：大屏幕 @media (min-width: 1200px) { ... }
+    平板和小屏幕：@media (min-width: 768px) and (max-width: 979px) { ... }
+    手机到平板：小于等于767px。
+         手机：小于等于480px。
+         
+       
+          

@@ -31,6 +31,30 @@
     平板和小屏幕：@media (min-width: 768px) and (max-width: 979px) { ... }
     手机到平板：小于等于767px。
          手机：小于等于480px。
-         
+        
+JS获取浏览器和屏幕的宽高：
+	一：网页可见区域宽高，不包括工具栏和滚动条（浏览器窗口可视区域大小）
+
+	1.对于IE9+、chrome、firefox、Opera、Safari：
+
+	window.innerHeight浏览器窗口的内部高度；
+	window.innerWidth浏览器窗口的内部宽度；
+	
+	2.对于IE8.7.6.5:
+	document.documentElement.clientHeight:表示HTML文档所在窗口的当前高度；
+	document.documentElement.clientWidth:表示HTML文档所在窗口的当前宽度；
+	
+	document.body.clientHeight：表示HTML文档所在窗口的当前高度；
+	document.body.clientWidth：表示HTML文档所在窗口的当前宽度；
        
-          
+         二：网页正文全文宽高
+	 	document.documentElement.scrollWidth || document.body.scrollWidth;
+		document.documentElement.scrollHeight || document.body.scrollHeight;
+		
+	二：网页可见区域宽高，包括滚动条等边线（会随窗口的显示大小改变）
+
+	   	offsetWidth = scrollWidth + 左右滚动条 +左右边框；
+　　　　   	     offsetHeight = scrollHeight + 上下滚动条 + 上下边框；
+	     
+	    	document.documentElement.offsetWidth || document.body.offsetWidth ;
+		document.documentElement.offsetHeight || document.body.offsetHeight ;

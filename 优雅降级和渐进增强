@@ -1,0 +1,31 @@
+优雅降级：指的是CSS3的属性书写顺序上，一开始就将高级浏览器作为目标书写css代码，
+        将比较过时的浏览器的测试调试做后续开发。
+        
+  一个典型的例子：
+              优雅降级
+            {
+             border-radius: 10px 20px;
+			       -webkit-border-radius: 10px 20px;
+			       -ms-border-radius:10px 20px;
+			       -moz-border-radius: 10px 20px;
+			       -moz-border-radius: 10px 20px;
+              }
+渐进增强：重点在于关注各种版本浏览器的显示效果，优先考虑老板版本浏览器的可用性，最后考虑新版本浏览器的可用性，
+         渐渐增强：
+            {
+             -webkit-border-radius: 10px 20px;
+			       -ms-border-radius:10px 20px;
+			       -moz-border-radius: 10px 20px;
+			       -moz-border-radius: 10px 20px;
+             border-radius: 10px 20px;
+            /*个人推荐采用写法，或者根据目标人群考虑采用何种写法。*/
+            }
+            上述例子经试验；当采用渐进增强写法时，高版本浏览器都能实现效果，但当采用优雅降级写法时，Chrome浏览器无法实现，得到的结果相当于
+            样式 border-radius:10px;
+            css3提出以来，各浏览器对其的支持性如下：
+            
+         一开始：浏览器前缀CSS3和正常CSS3都不支持；
+         不久之前：浏览器只支持前缀CSS3，不支持正常CSS3；
+         现在：浏览器既支持前缀CSS3，又支持正常CSS3；
+         未来：浏览器不支持前缀CSS3，仅支持正常CSS3.
+  

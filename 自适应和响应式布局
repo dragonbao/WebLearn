@@ -15,7 +15,10 @@
 
 响应式布局：
           i：通过CSS3的属性media（媒体属性）来判断设备，为不同的设备匹配不同的样式。
-          具体的写法
+          具体的写法：
+	 首先在头部加入<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	 width=device-width：规定宽度为设备屏的宽度，initial-scale=1：初始缩放比为1 即不缩放不放大。maximum-scale=1，user-scalable=no
+	 允许用户缩放的最大比例为1，不允许用户手动缩放。
           @media mediaType and|only|not(media feather){
           CSScode }          
           其中media feather中 max-width:最大值，屏幕宽度超出这个值，该条件下的CSS样式不起作用。

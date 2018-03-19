@@ -1,0 +1,23 @@
+.clearfix:before{
+    content: "";
+    display: table;
+    clear: both;
+	visibility: hidden;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+	visibility: hidden;
+}
+
+ul,ol{
+	list-style: none;
+}
+.hide{
+    display: none;
+}
+*{
+	margin:0;
+	padding: 0;
+}

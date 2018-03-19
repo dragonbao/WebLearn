@@ -1,0 +1,1171 @@
+
+.shop-classify{
+
+}
+
+/*====================顶部图片样式=================*/
+.top-picture a{
+    display: block;
+    height:70px;
+}
+body{
+    min-width:1226px;
+    background:#f5f5f5;
+}
+.top-picture img {
+    width: 100%;
+    height:70px;
+}
+
+/*====================顶部菜单栏====================*/
+.top-nav{
+    line-height:40px;
+    background-color: #333;
+    font-size:12px;
+    color: #b0b0b0;
+}
+
+.top-nav a:hover{
+    color: #fff;
+}
+/*=============所有的a标签都去除下划线和默认样式=====*/
+a{
+    text-decoration: none;
+    color:#b0b0b0;
+}
+
+/*====================菜单栏之间的竖条隔离===========*/
+.sep{
+    color: #424242;
+    margin: 0 0.5em;
+}
+/*====================顶部导航栏前半部分=============*/
+.nav-left{
+    display: inline-block;
+    margin-left:3%;
+}
+/*====================购物车信息相关=================*/
+.top-cart{
+    float:right;
+    width:120px;
+    margin-left:15px;
+}
+/*===================顶部购物车图标==================*/
+.top-cart-img{
+    display: inline-block;
+    height:20px;
+    width:20px;
+    margin:0px 5px 0 0;
+    vertical-align:sub;
+}
+/*==================用户登录注册以及消息=============*/
+.userinfo{
+    float: right;
+}
+
+
+.special{
+    align-self:flex-end;
+}
+
+/*==================主体内容开始====================*/
+.container{
+    width:94%;
+    min-width:1226px;
+    margin:0 auto;
+}
+/*==================main容器大小规定================*/
+.main{
+   margin: 0 auto ;
+   height: auto;
+   width: 76.6rem;
+}
+/*===================商品导航栏====================*/
+.head-nav{
+    height:80px;
+}
+.head-nav:after{
+    content: '';
+    clear: both;
+    visibility: hidden;
+    display:block;
+}
+/*===================小米logo图标外框===============*/
+#logo{
+    float: left;
+    width:55px;
+}
+#head-logo{
+    display: table-cell;
+    width:80px;
+    height:55px;
+    background-color: #ff6700;
+    text-align: center;
+    vertical-align: middle;
+}
+/*===================小米logo图标===================*/
+#head-logo img{
+    display: inline-block;
+    width:35px;
+    height:35px;
+}
+/*===================商品分类导航栏=================*/
+.shop-classify li{
+    float: left;
+    padding:0 25px 0 0;
+    height:80px;
+    font-size:16px;
+    font-weight:400;
+    list-style: none;
+}
+
+.shop-classify li:hover {
+    color: orangered;
+    cursor: pointer;
+}
+/*=============左侧菜单栏的参照relative块===========*/
+.r_category{
+    position: relative;
+    width:120px;
+    padding-right:15px;
+}
+#use_posi:hover{
+    cursor: default;
+}
+.left_list{
+    position: absolute;
+   
+    margin-left: 228px;
+    margin-top:80px;
+    background: darkred;
+}
+.left_list_detail{
+    width:234px;
+    height:420px;
+    margin:20px 0 20px;
+}
+.left_list_detail li{
+    min-width:209px;
+    height:42px;
+
+}
+.left_list_detail li:hover{
+    background: orangered;
+}
+.flex{
+    display: none;
+    /*display: flex;*/
+    flex-direction:row;
+    flex-flow:wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: absolute;
+    width: 795px;
+    left: 234px;
+    top: 0;
+    background: #fff;
+    width:795px;
+    height:440px;
+    border-top:1px solid lightgray;
+    box-shadow:2px 5px 15px lightgrey ;
+
+}
+.flex_cell{
+    width:245px;
+    height:63px;
+    background: white;
+    padding-left:20px;
+    padding-top:10px;
+}
+.flex_cell img{
+    width:40px;
+    height:45px;
+    vertical-align: top;
+}
+.flex_cell span{
+    line-height:45px;
+
+}
+.left_list_detail li .flex a{
+    text-decoration: none;
+    background: white;
+    color: #000;
+}
+
+.left_list_detail li .flex a:hover{
+    color: orangered;
+    background: white;
+}
+
+.left_list_detail li a{
+    line-height: 42px;
+    color: white;
+    vertical-align: middle;
+    padding:10px 0 0 20px;
+    font-weight: 600;
+    font-size:14px;
+    font-family: sans-serif;
+}
+.left_list_detail li a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/*=================轮播图样式开始================*/
+.carfig{
+    position: absolute;
+    width: 987px;
+    height: 460px;
+    left: 462px;
+    top: 80px;
+}
+.carfig_figure{
+    width: 987px;
+    height: 460px; 
+    font-size: 0;
+}
+.carfig_figure img{
+    position: absolute;
+    left: 0
+    top:0;
+    width: 987px;
+    height: 460px;
+}
+.pic2,.pic3,.pic4{
+    opacity: 0;
+    transition: opacity 1s;
+}
+.pic1{
+    opacity: 1;
+    transition: opacity 1s;
+}
+/*===============左右按钮样式=================*/
+.left_menu,.right_menu{
+    position: absolute;
+    font-family: "Microsoft YaHei";
+    top: 200px;
+    left: 0;
+    width: 40px;
+    height: 66px;
+    line-height: 60px;
+    color: #fff;
+    background: #726767;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    border-radius: 3px;
+    opacity: 0.2; 
+    transition: opacity .6s;
+}
+.right_menu{
+    left: 947px;
+}
+.left_menu:hover,.right_menu:hover{
+    opacity: 1;
+}
+.show_start{
+    opacity: 1!important;
+}
+/*=================底部四个小按钮样式============*/
+.carfig_btn{
+    position: absolute;
+    right: 445px;
+    bottom: 25px;
+}
+.carfig_btn_list{
+    list-style: none; 
+}
+.carfig_btn_list li{
+    display: inline-block;
+    padding: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background:rgb(0,0,0,.4);
+    border:2px solid rgb(0,0,0,.4);
+}
+.carfig_btn_list li+li{
+    margin-left: 30px;
+}
+.carfig_btn_list li:first-child{
+    background:rgb(255,255,255,0);
+
+}
+.carfig_btn_list li:hover{
+    background:rgb(255,255,255,0)!important;
+}
+
+
+
+
+/*=================轮播图样式结束================*/
+.nav-top >li{
+    line-height: 56px;
+}
+/*搜索框以及搜索按钮图片*/
+.nav-search,.nav-search_box,.nav-search_btn{
+    float: right;
+}
+
+.nav-search{
+    width:300px;
+    height:48px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.nav-search_btn{
+    width:56px;
+    height:46px;
+    border:1px solid lightgray;
+    border-left:0;
+}
+.nav-search_btn:hover{
+    background-color: #ff6700;
+    cursor: pointer;
+}
+.nav-search_box input{
+    outline:none;
+    width:240px;
+    height:46px;
+    border:1px solid lightgray;
+}
+.nav-search_box input:focus{
+    outline: #b0b0b0 solid 1px;
+}
+.nav-search_btn img{
+    display: block;
+    width:16px;
+    height:16px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15px;
+}
+
+/*导航栏的下拉框内容*/
+
+/*下拉框外壳*/
+.drag_box1{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background: white;
+    margin-top:80px;
+    left:0;
+    width:100%;
+    height:250px;
+}
+/*.drag_box3,.drag_box4,.drag_box5,.drag_box6,.drag_box7*/
+.drag_box2{
+    display: none;
+    position: absolute;
+    z-index:2;
+    margin-top:80px;
+    left:0;
+    width:100%;
+    height:250px;
+    background:white;
+}
+
+/*头部导航栏第一个标签下拉列表*/
+.drag_box_cell{
+    float: left;
+}
+.xiaomi_phone{
+    min-width:170px;
+    min-height:230px;
+    /*border-right:1px solid lightgray;*/
+}
+.xiaomi_phone_mix{
+    color: #000;
+    margin-left:50px;
+    text-align: center;
+}
+.drag_box_cell{
+    text-align: center;
+    color: #000;
+}
+.drag_box_cell img{
+    width:170px;
+    height:130px;
+}
+
+.xiaomi_phone_mix p,.drag_box_cell p{
+    font-size:14px;
+    line-height:18px;
+    width:85px;
+    margin:7px auto 7px;
+    font-weight: 500;
+    font-family:sans-serif;
+}
+/*.drag_box_cell p 优先级大于<p class="hot">的 .hot*/
+#hot_mark,#hot_mark1,#hot_mark2,#hot_mark3,#hot_mark4{
+    font-size:14px;
+    line-height:24px;
+    width:72px;
+    color: lightsalmon;
+    margin:1px auto 12px;
+    border:1px solid lightsalmon;
+    -webkit-border-radius:5px ;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#hot_mark,#mix_prise,#hot_mark1,#note_prise,#max2_prise,#m6_prise,#m5x_prise,.prise{
+    color: lightsalmon;
+    font-weight:600;
+}
+.xiaomi_phone_m6,.xiaomi_phone_max2,.xiaomi_phone_5x{
+    margin-top:40px;
+}
+
+.drag_box_cell a{
+    color: #000;
+}
+/*间隔线*/
+.sep2{
+    width:1px;
+    height:120px;
+    background-color: lightgray;
+    margin:40px 0 0 25px;
+}
+
+.left_list_detail li:hover .flex{
+    display:flex;
+}
+
+/*======================screen1 内容========================*/
+.screen1{
+    margin: 486px auto 1.5rem;
+    height: auto;
+}
+
+
+.screen1>div{
+    float: left;
+    height: 10.6rem;
+}
+/*=============div之间的间隙===========*/
+.screen1 div+div {
+    margin-left: 0.8rem; 
+}
+/*=============活动入口================*/
+.screen1 .activity_entry{
+    width: 14.6rem;
+    background:#5f5750 url("") no-repeat;
+}
+.screen1 .activity_entry ul li{
+    float: left;
+    background:#5f5750;
+}
+.screen1 .activity_entry ul li+li{
+  border-bottom: 1px solid #665e57;
+}
+
+.screen1 .activity_entry ul li+li a:after{
+    content: "";
+    display: block;
+    height: 4.8rem;
+    margin-top: -4.3rem;
+    border-left: 1px solid #665e57;
+}
+.screen1 .activity_entry ul li:first-child{
+    border-bottom: 1px solid #665e57;
+}
+.screen1 .activity_entry ul li:nth-of-type(4){
+    border-bottom: 1px solid #5f5750;
+}
+.screen1 .activity_entry ul li a{
+    display: block;
+    width: 4.825rem;
+    height: 5.266rem;
+}
+.activity_entry ul li a:hover img+p{
+    /*background-color: #fff;*/
+    color: #fff;
+}
+.activity_entry img{
+    display: block;
+    padding-top: 1rem;
+    width: 1.5rem;
+    height: 1.7rem;
+    margin: 0 auto;
+}
+.activity_entry img+p{
+    line-height: 1.8rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #dbd4d4
+}
+.screen1 .activity_entry_xgsj{
+
+}
+/*=================小米5X=============*/
+.screen1 .XM5X{
+    background:#3061c0;
+}
+/*=================红米 5A============*/
+.screen1 .hongmi5A{
+    background: #fb5c59;
+}
+/*================小米温度计==========*/
+.screen1 .xiaomiWDJ{
+    background: #93bd67;
+}
+.screen1 .XM5X a,.screen1 .hongmi5A a,.screen1 .xiaomiWDJ a{
+    display: block;
+    width: 19.8rem;
+    height: 10.6rem;
+    transition: box-shadow .3s;
+}
+/*==============父元素设置了overflow:hidden 且就算父元素的height为auto，子元素的box_shadow仍然会因为
+超出宽高而被影藏。所以这里应该使用伪元素进行浮动清除而不是overflow:hidden========*/
+.screen1>div>a:hover{
+ box-shadow: 0px 1.2rem 0.625rem 3px #f0f0f0;
+}
+
+/*================第二屏=================*/
+.screen2{
+    width: 100%;
+    height: 26.8rem;
+}
+.screen2_XSQG{
+    display: block;
+    line-height: 3.8rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+/*=================第二屏导航部分==========*/
+.screen2_nav{
+    width: 100%;
+    height: 3.8rem;
+    position: relative;
+}
+.screen2_navbtn{
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e0e0e0;
+    width: 4.1rem;
+    height: 1.4rem;
+    border:1px solid #ece5de;
+    right: 0;
+    bottom: .6rem;
+}
+
+.screen2_navbtn-left,.screen2_navbtn-right{
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    padding:0 .3rem;
+    text-align: center;
+    /*margin:0 auto;*/
+}
+.screen2_navbtn-left:hover,.screen2_navbtn-right:hover{
+    color:#e67c59;
+    cursor: pointer;
+}
+.screen2_navbtn span:first-child{
+    border-right:1px solid #e0e0e0;
+}
+
+/*=========限时闪购商品栏加倒计时栏样式开始=====*/
+.screen2_shopping{
+    width: 100%;
+    height: auto;
+    /*background:#c0c0c0;*/
+}
+.screen2_shopping>div{
+    float: left;
+    height: 21.2rem;
+
+}
+.screen2_shopping .time_limit_calc{
+    width: 14.6rem;
+    background-color: #f1eded;
+}
+/*==============具体时间场次====================*/
+.time_limit_calc .time_limit_calc_date{
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    text-align: center;
+    margin:3.8rem auto 1.9rem;
+    color:#e55f5d;
+}
+/*=================闪电图标=====================*/
+.time_limit_calc img{
+    width: 100%;
+    height: 3.4rem;
+    margin-bottom: 2.3rem;
+    background: url(../img/shark.png) no-repeat;
+}
+
+.time_limit_calc p:nth-child(3){
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    margin-bottom:2rem;
+}
+/*===================倒计时====================*/
+.time_limit_calc .time_limit p{
+    font-size: 1.2rem;
+    line-height: 2.9rem;
+    width: 10.5rem;
+    margin:0 auto;
+    text-align: center;
+
+}
+.time_limit_calc .time_limit span{
+    display: block;
+    float: left;
+    width:2.9rem;
+    height:2.9rem;
+    color: #fff;
+    font-weight: 500;
+    background:#605157;
+}
+
+.time_limit_calc .time_limit .xiushi{
+    width: 0.9rem;
+    color: #605157;
+    font-weight: 500;
+    background: #f1eded;
+}
+
+
+/*==============倒计时部分开始=================*/
+.screen2_shopping_list{
+    width: 61.1rem;
+    margin-left: 0.9rem;
+}
+
+.screen2_shopping_list>a{
+    display: block;
+    float: left;
+    /*border-top:1px solid black;*/
+}
+
+.screen2_shopping_list>a+a{
+    margin-left: 0.8rem;
+}
+/*================顶部的border==================*/
+.time_limit_calc{
+    border-top:1px solid #e53935;
+}
+.screen2_shopping_listpic1{
+    border-top:1px solid #00c0a5;
+}
+.screen2_shopping_listpic2{
+    border-top:1px solid #ffac13;
+}
+.screen2_shopping_listpic3{
+    border-top:1px solid #83c44e;
+}
+.screen2_shopping_listpic4{
+    border-top:1px solid #2196f3;
+}
+/*==================闪购商品栏结束=================*/
+
+
+
+/*=================家电商品列表开始================*/
+
+.screen3{
+    width: 100%;
+    height: 42.2rem;
+    overflow: hidden;
+    /*background-color:#c0c0c0;*/
+    background-size: cover;
+}
+ .screen3_phone{
+    height: 42.3rem;
+ }
+/*=================家电商品导航栏==================*/
+.screen3_nav{
+    position: relative;
+    width: 100%;
+    height: 3.8rem;
+}
+/*========热门，电视影音，电脑，家居分类导航栏=====*/
+.screen3_navbtn{
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    font-size: 1rem;
+     height: 1.5rem;
+    line-height: 1.5rem;
+}
+.screen3_navbtn li{
+    float: left;
+    font-size: 1rem;
+    color: #424242;
+}
+.screen3_navbtns li a:hover{
+    color: #FF6633;
+}
+
+.screen3_navbtn ul li+li{
+    margin-left: 1.9rem;
+}
+.screen3_navbtn ul li a{
+    display: block;
+    color: #424242;
+}
+.screen3_navbtn li img{
+   margin-top:.18rem;
+}
+.screen3_navbtn_bottom{
+    width: 2rem;
+    height: 2px;
+    background: red;
+    -webkit-transition:margin-left 0.1s ease-in-out;
+    -moz-transition:margin-left 0.1s ease-in-out;
+    -ms-transition:margin-left 0.1s ease-in-out;
+    -o-transition:margin-left 0.1s ease-in-out;
+    transition: margin-left 0.1s ease-in-out;
+}
+/*==================第三屏主体内容起步设置==========.*/
+.screen3_content{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.screen3_content1{
+    width: 100%;
+    height: auto;
+}
+
+.screen3_content1 a>div{
+    width: 14.625rem;
+    height: 18.813rem;
+    background: #fff;
+}
+ .screen3_content1 a{
+    display: block;
+    float: left;
+ }
+ .screen3_content1 a+a{
+    margin: 0 0 0.875rem 0.86rem;
+ }
+.screen3_content1 a:nth-child(6),.screen3_content1 a:nth-child(7),.screen3_content1 a:nth-child(8),
+.screen3_content1 a:nth-child(10){
+    margin-bottom: 0;
+}
+.screen3_content1 a:hover{
+    box-shadow: 2px 5px 6px 4px #dfdfdf;
+    transform: translateY(-2px);
+}
+.screen3_content1 a{
+    transition: transform 0.4s,box-shadow 0.4s;
+    overflow: hidden;
+}
+.screen3_content1 .xiaomi_clear-roboot{
+    height: 38.375rem;
+}
+.screen3_content1 .xiaomi_camera,.screen3_content1 .xiaomi_show-more{
+    height:8.938rem;
+}
+
+/*===================文字定位以及样式==================*/
+.screen3_content1 div p{
+    font-size: 0.75rem;
+}
+.xiaomi_tv-32 p:nth-child(2),.xiaomi_tv-40 p:nth-child(2),.xiaomi_bijiben-i5 p:nth-child(2),
+.xiaomi_bijiben-i7 p:nth-child(2),.xiaomi_water-clearner p:nth-child(2),.xiaomi_kettle p:nth-child(2),
+.xiaomi_air-clearner p:nth-child(2){
+    line-height: 1.5rem;
+    height: 1.5rem;
+    color: #333333;
+}
+.xiaomi_tv-32 p:nth-child(3),.xiaomi_tv-40 p:nth-child(3),
+.xiaomi_water-clearner p:nth-child(3){
+    line-height:1rem;
+    height: 1rem;
+    color: #b0b0b0;
+}
+.xiaomi_bijiben-i5 p:nth-child(3),
+.xiaomi_bijiben-i7 p:nth-child(3),.xiaomi_kettle p:nth-child(3),
+.xiaomi_air-clearner p:nth-child(3){
+    height: 2.625rem;
+    line-height: 2.625rem;
+    margin-top: 1rem;
+    color: #ff6700;
+}
+
+.xiaomi_tv-32 p:nth-child(4),.xiaomi_tv-40 p:nth-child(4),.xiaomi_water-clearner p:nth-child(4){
+    line-height: 2.625rem;
+    height: 2.625rem;
+    color: #ff6700;
+}
+
+.screen3_content1 .xiaomi_show-more p,.screen3_content1 .xiaomi_camera p{
+    display: inline-block;
+    vertical-align: top;
+    font-size: .8rem;
+    line-height: 1.8rem;
+}
+.screen3_content1 .clear_phone-bottom{
+    margin-bottom: 0;
+}
+.delect{
+    color: #b0b0b0;
+}
+.xiaomi_camera-desc,.show_more-desc{
+    display: inline-block;
+    width: 9.3rem;
+    color:#333;
+    vertical-align: top;
+    height: 5rem;
+    margin-top: 2.5rem;
+}
+.xiaomi_camera-desc p span{
+    color: red;
+}
+.show_more-desc{
+    width: 8.9rem;
+    margin-top: 2.8rem;
+
+}
+.show_more-desc p{
+    font-size: 1rem!important;
+}
+.show_more-desc p span{
+    color: #c0c0c0;
+}
+.screen3_content1 .user-comment{
+    width: 100%;
+    height: 6rem;
+    color: #fff;
+    background: #FF6600;
+    text-align: center;
+    transform: translateY(1.5rem);
+    overflow: hidden;
+}
+
+.screen3_content1 a:hover .user-comment{
+    transform: translateY(-4.875rem);
+    transition: transform .5s;
+}
+
+.screen3_content1 .user-comment p{
+    font-size: 0.8rem;
+    line-height:1.5rem; 
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    width: 100%;
+}
+.screen3_content1 a:hover .waterclear-comment,.screen3_content1 a:hover .kettle-comment,.screen3_content1 a:hover .airclear-comment{
+    transform: translateY(-4.5rem);
+}
+
+/*========================第四屏样式=====================*/
+.screen4{
+    width: 100%;
+    height: 30.1rem;
+}
+.screen4_content{
+    width: 100%;
+   height: auto;
+}
+.screen4_content>div{
+    position: relative;
+    float: left;
+    width: 18.54rem;
+    height: 26.1rem;
+    text-align: center;
+    background-color: #fff;
+    border-top:1px solid #ffac13;
+    overflow: hidden;
+}
+/*.screen4_content div>div div{
+    float: left;
+}*/
+.screen4_content>div+div{
+    margin-left:.81rem;
+    border-top:1px solid #95cd68;
+}
+.screen4_content .game_game{
+    border-top:1px solid #f4aaa8;
+}
+.screen4_content .app-show{
+    border-top:1px solid #359ff4;
+}
+/*============通用样式=================*/
+.title{
+    padding-top:1.875rem;
+    line-height: 3.25rem;
+    font-size: 1rem;
+    color: #ffac13;
+}
+.screen4_miui-themes .title{
+    color:#95cd68;
+}
+.screen4_games .title{
+    color:#f4aaa8;
+}
+.screen4_apps .title{
+    color:#359ff4;
+}
+.book-name{
+    line-height: 2rem;
+    font-size: 1.25rem;
+}
+
+.book-desc{
+    display: block;
+    line-height: 1rem;
+    font-size: .75rem;
+    color: #c6c6c6;
+}
+
+.book-prise{
+    font-size: .75rem;
+    line-height: 2.5rem;
+}
+.less-space{
+    padding-bottom:3.5rem;
+}
+
+.book-show:hover,.theme-show:hover,.game-show:hover,.app-show:hover{
+    -webkit-box-shadow: 0px 5px  10px 5px #c0c0c0;
+    -moz-box-shadow: 0px 5px  10px 5px #c0c0c0;
+    -ms-box-shadow: 0px 5px  10px 5px #c0c0c0;
+    -o-box-shadow: 0px 5px  10px 5px #c0c0c0;
+    box-shadow: 0px 5px  10px 5px #c0c0c0;
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform:translateY(-3px);
+    transform:translateY(-3px);
+    -webkit-transition: box-shadow .6s,transform .8s;
+    -moz-transition: box-shadow .6s,transform .8s;
+    -o-transition: box-shadow .6s,transform .8s;
+    -ms-transition: box-shadow .6s,transform .8s;
+    transition: box-shadow .6s,transform .8s;
+}
+/*==========================图书列轮播图====================*/
+/*.book-show:hover .left-btn,.book-show:hover .right-btn{
+    opacity:.3;
+}*/
+.screen4_books{
+    width: 55.62rem;
+    height: 26.1rem;
+    transition: margin-left .4s ease-in-out;
+    }
+.screen4_miui-themes,.screen4_apps,.screen4_games{
+    width: 74.16rem;
+    height: 26.1rem;
+    transition: margin-left .4s ease-in-out;
+    }
+
+.screen4_books div,.screen4_miui-themes div,.screen4_apps div,.screen4_games div{
+    float: left;
+    height: 26.1rem;
+}
+.left-btn,.right-btn{
+    position: absolute;
+    opacity: 0;
+    width: 1.25rem;
+    height: 3rem;
+    top: 11.5rem;
+    background: black;
+    line-height:3rem;
+    font-size: 1.5rem;
+    text-align: center; 
+    transition: opacity .2s;
+    visibility: visible
+}
+.left-btn:hover,.right-btn:hover{
+    cursor: pointer;
+}
+.left-btn,.left-btn p,.right-btn p{
+    left: 0;
+    color: #fff;
+    font-weight: bold;
+}
+.right-btn{
+    right: 0;
+}
+.fill-in{
+    width: 100%;
+    height:5rem!important;
+}
+/*========================第五屏：视频栏目=================*/
+.screen5{
+    width: 100%;
+    height: 21.6rem;
+    background: #f5f5f5;
+
+}
+.screen5_content div{
+    float: left;
+    height: 17.8rem;
+    background:#fff;
+}
+.screen5_content div:hover{
+   -webkit-box-shadow:0 5px 10px 5px #c0c0c0 ;
+    -moz-box-shadow:0 5px 10px 5px #c0c0c0 ;
+    -ms-box-shadow:0 5px 10px 5px #c0c0c0 ;
+    -o-box-shadow:0 5px 10px 5px #c0c0c0 ;
+    box-shadow:0 5px 10px 5px #c0c0c0 ; 
+    -webkit-transition:box-shadow .5s ;
+    -moz-transition:box-shadow .5s ;
+    -ms-transition:box-shadow .5s ;
+    -o-transition:box-shadow .5s ;
+    transition:box-shadow .5s ;
+}
+.screen5_content div+div{
+    margin-left: .81rem;
+}
+video{
+    height: 11.25rem;
+    width: 18.4rem;
+}
+.screen5_video-desc,.screen5_video-title{
+    font-size: .75rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.screen5_video-desc{
+    color: #c6c6c6; 
+}
+/*=============footer部分样式定义===================*/
+.footer{
+    width: 100%;
+    height: 22.5rem;
+    background:#fff;
+    margin-top: 4rem;
+}
+.footer_top li{
+    width: 19.9%;
+    height: 5rem;
+    text-align: center;
+    float: left;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.footer_top li p{
+    font-size: 1rem;
+    line-height: 5rem;
+    color: #616161;
+}
+.footer_top li p:hover span{
+    color: #ff6700;
+}
+.footer_top li img{
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+}
+.footer_top li span{
+    vertical-align: middle;
+    margin-left:.5rem; 
+    }
+.footer_content{
+    width: 100%;
+    height: 10.5rem;
+    margin-top: 1rem;
+    font-size: .75rem;
+}
+
+.footer_content div{
+    float: left;
+    }
+.footer_content1{
+    width: 80%;
+    height: 9.5rem;
+}
+.footer_content1 a:hover li{
+    color: #ff6700;
+}
+.footer_content1 ul{
+    float: left;
+    width: 10rem;
+    text-align: left;
+}
+.footer_content1 li{
+    line-height: 1.75rem;
+    color: #757575;
+}
+.footer_content1 ul>li:first-child{
+    line-height: 3.75rem;
+    color: #424242;
+}
+.footer_content2{
+    width: 19.9%;
+    text-align: center;
+}
+
+.footer_content2-phone{
+    font-size: .75rem;
+    color: #757575;
+    line-height: 1.2rem;
+
+ }
+.footer_content2-phone li:first-child{
+    padding-top:1.25rem;
+    line-height: 2rem;     
+    font-size:1.5rem;
+    font-weight: bold;
+    color: #ff6700; 
+ }
+ .footer_content2-phone .csm-server{
+    width: 7.5rem;
+    height: 1.75rem;
+    margin: 1rem auto 0;
+    line-height: 1.75rem;
+    color: #ff6700;
+    border:1px solid #ff6700;
+ }
+ /*=============footer_bottom start==============*/
+ .footer_bottom{
+    position: relative;
+    width: 100%;
+    padding-top:1.875rem;
+    background: #fafafa;
+    font-size: .875rem;
+    line-height: 1.2rem;
+    color: #b0b0b0;
+ }
+ .footer_bottom .logo{
+    float: left;
+    margin-right: 1rem;
+ }
+ .footer_bottom a:hover span{
+    color: #ff6700;
+}
+ 
+
+
+.icons{
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    height: 1.75rem;
+    width: 29rem;
+    overflow: hidden;
+}
+.icons i{
+    display: inline-block;
+    width: 5.5rem;
+    height: 1.75rem;
+    font-size: 0;
+}
+.icon1{
+    background:url(../xuebitu/sprite.png) 0px 0px no-repeat;
+}
+.icon2{
+    background:url(../xuebitu/sprite.png) -83px 0px no-repeat;
+}
+.icon3{
+    background:url(../xuebitu/sprite.png) -166px 0px no-repeat;
+}
+.icon4{
+    background:url(../xuebitu/sprite.png) -249px 0px no-repeat;
+}
+.icon5{
+    background:url(../xuebitu/sprite.png) -332px 0px no-repeat;
+}

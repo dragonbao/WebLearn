@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>小米官网</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,max-scale=2,user-scalable=yes"/>
-    <!-- IE=edge告诉IE使用最新的浏览器引擎渲染网页，chrome 则可以激活chrome Frame-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <!--查看挡球浏览器的行为模式：标准还是怪异document.compatMode (1)BackCompat：标准兼容模式关闭;
-        (2)CSS1Compat：标准兼容模式开启-->
+    <head>
+        <meta charset="UTF-8">
+        <title>小米官网</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,max-scale=2,user-scalable=yes"/>
+        <!-- IE=edge告诉IE使用最新的浏览器引擎渲染网页，chrome 则可以激活chrome Frame-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta name="keywords" contnet="小米，小米Note3，红米Note3、红米5Plus，小米MIX2，小米商城">
-        <meta name="description" content="小米商城直营小米公司旗下所有产品，囊括小米手机系列
-        小米Note 3、小米5X、小米MIX2、红米手机系列等。小米智能硬件产品.">
+        <meta name="description" content="小米商城直营小米公司旗下所有产品，囊括小米手机系列小米Note 3、小米5X、小米MIX2、红米手机系列等。小米智能硬件产品.">
         <link rel="stylesheet" type="text/css" href="../css/index.css">
         <link rel="stylesheet" type="text/css" href="../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <script type="text/javascript" src="../js/ieVersion.js"></script>
         <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="../js/index.js"></script>
+        <base target="_self">
     </head>
     <body>
         <!--[if lte IE8]>
             <p>你的浏览器版本过低 继续浏览网页可能会有一些错误，请<a href="http://www.browerhappy.com">点击这里更新您的浏览器版本！</a></p>
         <![endif]-->
+        
+        <div class="page">
         <div class="top-picture">
-            <a href="#"><img src="../img/topline.jpg"></a>
+            <a href="#"><img src="../img/topline.jpg" alt="顶部大图"></a>
         </div>
         <nav class="top-nav">
             <div class="nav-left">
@@ -45,7 +46,7 @@
                     <div class="head-nav clearfix"><!--导航栏-->
                         <div id="logo"><!--导航栏logo-->
                             <a href="#" id="head-logo">
-                                <img src="../resource/xiaomi.png">
+                                <img src="../resource/xiaomi.png" alt="logo图片">
                             </a>
                         </div>
 
@@ -57,10 +58,10 @@
                             <!-- 顶部轮播图开始 -->
                             <div class="carfig">
                                 <div class="carfig_figure"><!--png无损，jpg压缩变质一些 -->
-                                    <img class="pic4" src="../img/carfig4.jpg" alt="pic4">
-                                    <img class="pic3" src="../img/carfig3.jpg" alt="pic3">
-                                    <img class="pic2" src="../img/carfig2.jpg" alt="pic2">
-                                    <img class="pic1 show_start" src="../img/carfig1.jpg" alt="pic1">
+                                    <img class="pic4" src="../img/carfig4.jpg" alt="pic4" alt="轮播图4">
+                                    <img class="pic3" src="../img/carfig3.jpg" alt="pic3" alt="轮播图3">
+                                    <img class="pic2" src="../img/carfig2.jpg" alt="pic2" alt="轮播图2">
+                                    <img class="pic1 show_start" src="../img/carfig1.jpg" alt="轮播图1">
                                 </div>
                                 <div class="carfig_btn">
                                     <ul class="carfig_btn_list">
@@ -84,44 +85,44 @@
                                             <li>
                                                 <a href="#">手机 电话卡</a>
                                                 <div class="flex">
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png"><span>小米note3</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png"><span>红米5</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png"><span>小米mix2</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png"><span>红米5A</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj5.jpg"><span>小米6</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj6.png"><span>小米note5A</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj7.png"><span>红米note 4X</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj8.png"><span>小米max 2</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj9.png"><span>红米4x</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj10.png"><span>红米5 Plus</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj11.png"><span>红米4A</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj12.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png" alt="小米note3"><span>小米note3</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png" alt="红米5"><span>红米5</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png" alt="小米mix2"><span>小米mix2</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png" alt="红米5A"><span>红米5A</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj5.jpg" alt="小米6"><span>小米6</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj6.png" alt="小米note5A"><span>小米note5A</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj7.png" alt="红米note 4X"><span>红米note 4X</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj8.png" alt="小米max 2"><span>小米max 2</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj9.png" alt="红米4x"><span>红米4x</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj10.png" alt="红米5 Plus"><span>红米5 Plus</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj11.png" alt="红米4A"><span>红米4A</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj12.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png" alt="小米手机"><span>小米手机</span></a>
                                                 </div>
                                             </li>
                                             <li><a href="">笔记本</a>
-                                                <div class="flex">
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png"><span>小米note3</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png"><span>红米5</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png"><span>小米mix2</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png"><span>红米5A</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj5.jpg"><span>小米6</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj6.png"><span>小米note5A</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj7.png"><span>红米note 4X</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj8.png"><span>小米max 2</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj9.png"><span>红米4x</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj10.png"><span>红米5 Plus</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj11.png"><span>红米4A</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj12.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png"><span>小米手机</span></a>
+                                                 <div class="flex">
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png" alt="小米note3"><span>小米note3</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png" alt="红米5"><span>红米5</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png" alt="小米mix2"><span>小米mix2</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png" alt="红米5A"><span>红米5A</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj5.jpg" alt="小米6"><span>小米6</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj6.png" alt="小米note5A"><span>小米note5A</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj7.png" alt="红米note 4X"><span>红米note 4X</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj8.png" alt="小米max 2"><span>小米max 2</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj9.png" alt="红米4x"><span>红米4x</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj10.png" alt="红米5 Plus"><span>红米5 Plus</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj11.png" alt="红米4A"><span>红米4A</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj12.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png" alt="小米手机"><span>小米手机</span></a>
                                                 </div>
                                             </li>
 
@@ -129,24 +130,24 @@
                                             <li><a>路由器 智能硬件</a></li>
                                             <li><a>移动电源 电池 插线板</a></li>
                                             <li><a>耳机 音响</a>
-                                                <div class="flex">
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png"><span>小米note3</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png"><span>红米5</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png"><span>小米mix2</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png"><span>红米5A</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj5.jpg"><span>小米6</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj6.png"><span>小米note5A</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj7.png"><span>红米note 4X</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj8.png"><span>小米max 2</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj9.png"><span>红米4x</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj10.png"><span>红米5 Plus</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj11.png"><span>红米4A</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj12.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png"><span>小米手机</span></a>
-                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png"><span>小米手机</span></a>
+                                                 <div class="flex">
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png" alt="小米note3"><span>小米note3</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png" alt="红米5"><span>红米5</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png" alt="小米mix2"><span>小米mix2</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png" alt="红米5A"><span>红米5A</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj5.jpg" alt="小米6"><span>小米6</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj6.png" alt="小米note5A"><span>小米note5A</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj7.png" alt="红米note 4X"><span>红米note 4X</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj8.png" alt="小米max 2"><span>小米max 2</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj9.png" alt="红米4x"><span>红米4x</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj10.png" alt="红米5 Plus"><span>红米5 Plus</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj11.png" alt="红米4A"><span>红米4A</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj12.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj1.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj2.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj3.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png" alt="小米手机"><span>小米手机</span></a>
+                                                    <a href="#" class="flex_cell"><img src="../resource/sj4.png" alt="小米手机"><span>小米手机</span></a>
                                                 </div>
 
                                             </li>
@@ -183,7 +184,7 @@
                                 <div class="nav-search">
 
                                     <div class="nav-search_btn">
-                                        <img src="../resource/serachbox.png">
+                                        <img src="../resource/serachbox.png" alt="搜索">
                                     </div>
                                     <div class="nav-search_box">
                                         <label class="hide" for="keywords">用户输入的搜索关键字</label>
@@ -347,7 +348,7 @@
                                                 <!-- 闪购时间场 包含场次 时间 倒计时 -->
                                                 <div class="time_limit_calc">
                                                     <p class="time_limit_calc_date">20:00 场</p>
-                                                    <img src="../img/shark.png">
+                                                    <img src="../img/shark.png"  alt="限时购">
                                                     <p>距离开始还有</p>
                                                     <div class="time_limit">
                                                         <p class="clearfix">
@@ -366,22 +367,22 @@
                                                 <!-- ==========闪购商品轮播图开始======== -->
                                                     <a href="javascript:;" class="screen2_shopping_listpic1">
                                                         <div>
-                                                            <img src="../img/screen2-pic1.png">
+                                                            <img src="../img/screen2-pic1.png" alt="耳机">
                                                         </div>
                                                     </a>
                                                     <a href="javascript:;" class="screen2_shopping_listpic2">
                                                         <div>
-                                                            <img src="../img/screen2-pic2.png">
+                                                            <img src="../img/screen2-pic2.png" alt="笔记本Air">
                                                         </div>
                                                     </a>
                                                     <a href="javascript:;" class="screen2_shopping_listpic3">
                                                         <div>
-                                                            <img src="../img/screen2-pic3.png">
+                                                            <img src="../img/screen2-pic3.png" alt="笔记本Pro">
                                                         </div>
                                                     </a>
                                                     <a href="javascript:;" class="screen2_shopping_listpic4">
                                                         <div>
-                                                            <img src="../img/screen2-pic4.png">
+                                                            <img src="../img/screen2-pic4.png"  alt="红米5A">
                                                         </div>
                                                     </a>
                                                 <!--======== 闪购商品轮播图结束 ==============-->
@@ -397,7 +398,7 @@
                                                 <div class="screen3_navbtn">
                                                     <ul class="clearfix screen3_navbtns">
                                                         <li><a href="javascript:;">查看更多</a></li>
-                                                        <li><a href="javascript:;"><img src="../img/more.png"></a></li>
+                                                        <li><a href="javascript:;"><img src="../img/more.png" alt="查看更多"></a></li>
                                                     </ul>
                                                 </div>
                                                 <!-- ==========================导航栏结束 ============================================-->
@@ -409,13 +410,13 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_clear-roboot">
-                                                            <img src="../img/phone-left.png">
+                                                            <img src="../img/phone-left.png" alt="小米note3">
                                                         </div>
                                                     </a>
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_tv-32">
-                                                            <img src="../img/phone-1.png">
+                                                            <img src="../img/phone-1.png"  alt="小米6">
                                                             <p>小米6 4GB+64GB</p>
                                                             <p>变焦双，4轴防抖，骁龙835处理器</p>
                                                             <p>999元 <del class="delect">1199元</del></p>
@@ -424,7 +425,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_tv-40">
-                                                            <img src="../img/phone-2.png">
+                                                            <img src="../img/phone-2.png" alt="小米MIX2">
                                                             <p>小米MIX 2 全陶瓷尊享版</p>
                                                             <p>全面屏2.0，Unibody 全陶瓷</p>
                                                             <p>4299元 <del class="delect">4699元</del></p> 
@@ -433,7 +434,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_tv-40">
-                                                            <img src="../img/phone-3.png">
+                                                            <img src="../img/phone-3.png" alt="小米NOTE3">
                                                             <p>小米NOTE 3 4GB+64GB</p>
                                                             <p>1600万美颜自拍，2倍变焦双摄</p>      
                                                             <p>1799元 <del class="delect">1999元</del></p>
@@ -442,7 +443,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/phone-4.png">
+                                                            <img src="../img/phone-4.png"  alt="小米5X">
                                                             <p>小米5X 4GB+64GB</p>
                                                             <p>光学变焦双摄，拍人更美</p>
                                                             <p>1999元</p>                                                           
@@ -451,7 +452,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/phone-5.png">
+                                                            <img src="../img/phone-5.png"  alt="红米5A">
                                                             <p>红米5A 2GB内存</p>
                                                             <p>8天超长待机，137g轻巧机身</p>
                                                             <p>599元</p>                                                            
@@ -460,7 +461,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/phone-6.png">
+                                                            <img src="../img/phone-6.png" alt="小米4A">
                                                             <p>红米4A 16GB</p>
                                                             <p>轻盈磨砂质感，3120mh 大电池</p>
                                                             <p>499元 <del class="delect">599元</del></p>      
@@ -469,7 +470,7 @@
                                             
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/phone-7.png">
+                                                            <img src="../img/phone-7.png" alt="小米5">
                                                             <p>红米5 2GB+16GB</p>
                                                             <p>5.7英寸全面屏，前置柔光自拍</p>
                                                             <p>749元 <del class="delect">799元</del></p>              
@@ -478,7 +479,7 @@
 
                                                     <a href="javascript:;" class="clear_phone-bottom">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/phone-8.png">
+                                                            <img src="../img/phone-8.png" alt="小米NOTE5a">
                                                             <p>红米NOTE 5A 2GB+16GB</p>
                                                             <p>5.5英寸大屏，超轻薄机身</p>
                                                             <p>649元 <del class="delect">699元</del></p>
@@ -521,13 +522,13 @@
                                                 <div class="screen3_content1 clearfix">
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_clear-roboot">
-                                                            <img src="../img/xiaomi-robot.png">
+                                                            <img src="../img/xiaomi-robot.png" alt="小米清洁机器人">
                                                         </div>
                                                     </a>
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_tv-32">
-                                                            <img src="../img/xiaomi4A-32.png">
+                                                            <img src="../img/xiaomi4A-32.png"  alt="小米电视4A">
                                                             <p>小米电视4A 32英寸</p>
                                                             <p>64位四核处理器/1GB+4GB大内存</p>
                                                             <p>999元 <del class="delect">1199元</del></p>
@@ -539,7 +540,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_tv-40">
-                                                            <img src="../img/xiaomi4A-40.png">
+                                                            <img src="../img/xiaomi4A-40.png" alt="小米电视40">
                                                             <p>小米电视4A 40英寸</p>
                                                             <p>FDH全高清屏/人工智能语音系统</p>
                                                             <p>1599元 <del class="delect">1699元</del></p>
@@ -551,7 +552,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_bijiben-i5">
-                                                            <img src="../img/xiaomi-air.png">
+                                                            <img src="../img/xiaomi-air.png" alt="小米笔记本Air">
                                                             <p>13.3"小米笔记本Air i5 8G 256G...</p>
                                                             <p>5199元</p>
                                                             <div class="user-comment">
@@ -562,7 +563,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_bijiben-i7">
-                                                            <img src="../img/xiaomi-pro.png">
+                                                            <img src="../img/xiaomi-pro.png" alt="小米笔记本-pro">
                                                             <p>15.6"小米笔记本Pro i7 16G MX...</p>
                                                             <p>6999元</p>
                                                             <div class="user-comment">
@@ -573,7 +574,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/water-clearner.png">
+                                                            <img src="../img/water-clearner.png" alt="小米净水器">
                                                             <p>小米净水器 (厨下式)</p>
                                                             <p>大流量RO反渗透直出纯净水</p>
                                                             <p>1999元</p>
@@ -585,7 +586,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_kettle">
-                                                            <img src="../img/xiaomi_kettle.png">
+                                                            <img src="../img/xiaomi_kettle.png" alt="米家恒温电水壶">
                                                             <p>米家恒温电水壶</p>
                                                             <p>199元</p>
                                                             <div class="user-comment kettle-comment">
@@ -596,7 +597,7 @@
                                             
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_air-clearner">
-                                                            <img src="../img/air-clearner.png">
+                                                            <img src="../img/air-clearner.png" alt="小米米家空气净化器">
                                                             <p>小米米家空气净化器 2S</p>
                                                             <p>899元</p>
                                                             <div class="user-comment airclear-comment">
@@ -610,7 +611,7 @@
                                                             <div class="xiaomi_camera-desc">
                                                                 <p>小白摄像机<br><span>399元</span></p>
                                                             </div>
-                                                            <img src="../img/xiaomi-camera.png">
+                                                            <img src="../img/xiaomi-camera.png" alt="小白摄像机">
                                                         </div>
                                                     </a>
 
@@ -619,7 +620,7 @@
                                                             <div class="show_more-desc">
                                                                 <p>浏览更多<br><span>热门</span></p>
                                                             </div>
-                                                            <img src="../img/show-more.png">
+                                                            <img src="../img/show-more.png" alt="浏览更多">
                                                         </div>
                                                     </a>
 
@@ -636,13 +637,13 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_clear-roboot">
-                                                            <img src="../img/phone-left.png">
+                                                            <img src="../img/phone-left.png" alt="清洁机器人">
                                                         </div>
                                                     </a>
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_tv-32">
-                                                            <img src="../img/phone-1.png">
+                                                            <img src="../img/phone-1.png" alt="小米电视">
                                                             <p>小米6 4GB+64GB</p>
                                                             <p>变焦双，4轴防抖，骁龙835处理器</p>
                                                             <p>999元 <del class="delect">1199元</del></p>
@@ -651,7 +652,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_tv-40">
-                                                            <img src="../img/phone-2.png">
+                                                            <img src="../img/phone-2.png" alt="xiaomiMIX2">
                                                             <p>小米MIX 2 全陶瓷尊享版</p>
                                                             <p>全面屏2.0，Unibody 全陶瓷</p>
                                                             <p>4299元 <del class="delect">4699元</del></p> 
@@ -660,7 +661,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_tv-40">
-                                                            <img src="../img/phone-3.png">
+                                                            <img src="../img/phone-3.png" alt="xiaomiNOTE3">
                                                             <p>小米NOTE 3 4GB+64GB</p>
                                                             <p>1600万美颜自拍，2倍变焦双摄</p>      
                                                             <p>1799元 <del class="delect">1999元</del></p>
@@ -669,7 +670,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/phone-4.png">
+                                                            <img src="../img/phone-4.png" alt="xiaomi5X">
                                                             <p>小米5X 4GB+64GB</p>
                                                             <p>光学变焦双摄，拍人更美</p>
                                                             <p>1999元</p>                                                           
@@ -678,7 +679,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/phone-5.png">
+                                                            <img src="../img/phone-5.png" alt="xiaomi5S">
                                                             <p>红米5A 2GB内存</p>
                                                             <p>8天超长待机，137g轻巧机身</p>
                                                             <p>599元</p>                                                            
@@ -687,7 +688,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/phone-6.png">
+                                                            <img src="../img/phone-6.png" alt="xiaomi4A">
                                                             <p>红米4A 16GB</p>
                                                             <p>轻盈磨砂质感，3120mh 大电池</p>
                                                             <p>499元 <del class="delect">599元</del></p>      
@@ -696,7 +697,7 @@
                                             
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/phone-7.png">
+                                                            <img src="../img/phone-7.png" alt="xiaomi5">
                                                             <p>红米5 2GB+16GB</p>
                                                             <p>5.7英寸全面屏，前置柔光自拍</p>
                                                             <p>749元 <del class="delect">799元</del></p>              
@@ -705,7 +706,7 @@
 
                                                     <a href="javascript:;" class="clear_phone-bottom">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/phone-8.png">
+                                                            <img src="../img/phone-8.png" alt="xiaomijinshuiqi">
                                                             <p>红米NOTE 5A 2GB+16GB</p>
                                                             <p>5.5英寸大屏，超轻薄机身</p>
                                                             <p>649元 <del class="delect">699元</del></p>
@@ -723,13 +724,13 @@
                                                     <div class="screen3_content1 clearfix">
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_clear-roboot">
-                                                            <img src="../img/xiaomi-robot.png">
+                                                            <img src="../img/xiaomi-robot.png" alt="qinjiejiqiren">
                                                         </div>
                                                     </a>
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_tv-32">
-                                                            <img src="../img/xiaomi4A-32.png">
+                                                            <img src="../img/xiaomi4A-32.png" alt="xiaomidianshi">
                                                             <p>小米电视4A 32英寸</p>
                                                             <p>64位四核处理器/1GB+4GB大内存</p>
                                                             <p>999元 <del class="delect">1199元</del></p>
@@ -741,7 +742,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_tv-40">
-                                                            <img src="../img/xiaomi4A-40.png">
+                                                            <img src="../img/xiaomi4A-40.png" alt="xiaomidianshi40">
                                                             <p>小米电视4A 40英寸</p>
                                                             <p>FDH全高清屏/人工智能语音系统</p>
                                                             <p>1599元 <del class="delect">1699元</del></p>
@@ -753,7 +754,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_bijiben-i5">
-                                                            <img src="../img/xiaomi-air.png">
+                                                            <img src="../img/xiaomi-air.png" alt="xiaomibijibenAir">
                                                             <p>13.3"小米笔记本Air i5 8G 256G...</p>
                                                             <p>5199元</p>
                                                             <div class="user-comment">
@@ -764,7 +765,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_bijiben-i7">
-                                                            <img src="../img/xiaomi-pro.png">
+                                                            <img src="../img/xiaomi-pro.png" alt="xioamibijibenPro">
                                                             <p>15.6"小米笔记本Pro i7 16G MX...</p>
                                                             <p>6999元</p>
                                                             <div class="user-comment">
@@ -775,7 +776,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_water-clearner">
-                                                            <img src="../img/water-clearner.png">
+                                                            <img src="../img/water-clearner.png" alt="xiaomijinshuiqi">
                                                             <p>小米净水器 (厨下式)</p>
                                                             <p>大流量RO反渗透直出纯净水</p>
                                                             <p>1999元</p>
@@ -787,7 +788,7 @@
 
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_kettle">
-                                                            <img src="../img/xiaomi_kettle.png">
+                                                            <img src="../img/xiaomi_kettle.png" alt="xiaomihengwen1renshuihu">
                                                             <p>米家恒温电水壶</p>
                                                             <p>199元</p>
                                                             <div class="user-comment kettle-comment">
@@ -798,7 +799,7 @@
                                             
                                                     <a href="javascript:;">
                                                         <div class="xiaomi_air-clearner">
-                                                            <img src="../img/air-clearner.png">
+                                                            <img src="../img/air-clearner.png" alt="xioamikongiqjinhua">
                                                             <p>小米米家空气净化器 2S</p>
                                                             <p>899元</p>
                                                             <div class="user-comment airclear-comment">
@@ -812,7 +813,7 @@
                                                             <div class="xiaomi_camera-desc">
                                                                 <p>小白摄像机<br><span>399元</span></p>
                                                             </div>
-                                                            <img src="../img/xiaomi-camera.png">
+                                                            <img src="../img/xiaomi-camera.png" alt="xiaobaishexiangji">
                                                         </div>
                                                     </a>
 
@@ -821,7 +822,7 @@
                                                             <div class="show_more-desc">
                                                                 <p>浏览更多<br><span>热门</span></p>
                                                             </div>
-                                                            <img src="../img/show-more.png">
+                                                            <img src="../img/show-more.png" alt="remen">
                                                         </div>
                                                     </a>
 
@@ -938,7 +939,7 @@
                                                     <p class="book-name">哈利波特与被诅咒的孩子</p>
                                                     <a href="javascript:;" class="book-desc">"哈利波特"第八个故事中文版震撼来<br/>袭！特别彩排版本！</a>
                                                     <p class="book-prise">29.37元</p>
-                                                    <img src="../img/footer-1.png">
+                                                    <img src="../img/footer-1.png" alt="halibote">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                 <div class="book-2">
@@ -947,7 +948,7 @@
                                                     <a href="javascript:;" class="book-desc">
                                                         畅销作家大冰2016新书<br/>讲给你听，好吗好的!</a>
                                                         <p class="book-prise">17.99元</p>
-                                                    <img src="../img/book-2.png">
+                                                    <img src="../img/book-2.png" alt="haomahaode">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                 <div class="book-3">
@@ -956,7 +957,7 @@
                                                     <a href="javascript:;" class="book-desc">
                                                         海量好书，享受精品阅读时光<br/>漂亮的中文排版，千万读者选择！</a>
                                                     <p class="book-prise">12米币</p>
-                                                    <img src="../img/book-3.png">
+                                                    <img src="../img/book-3.png" alt="qianwnagduokan">
                                                     <div class="fill-in"></div>
 
                                                 </div>
@@ -982,7 +983,7 @@
                                                     <p class="book-name">米奇-有你有我</p>
                                                     <a href="javascript:;" class="book-desc">米奇来啦！小米主题和迪士尼首度合<br/>作，打造精品迪士尼系列主题</a>
                                                     <p class="book-prise">12米币</p>
-                                                    <img src="../img/footer-2.png">
+                                                    <img src="../img/footer-2.png" alt="dishini">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                 <div class="theme-2">
@@ -990,7 +991,7 @@
                                                     <p class="book-name">钢铁侠-科技控</p>
                                                     <a href="javascript:;" class="book-desc ">i'm Iron Man!小米主题和迪士尼首度<br>合作，打造精品漫威系列主题</a>
                                                     <p class="book-prise">12米币</p>
-                                                    <img src="../img/theme-2.png">
+                                                    <img src="../img/theme-2.png" alt="gangtiexia">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                 <div class="theme-3">
@@ -998,7 +999,7 @@
                                                     <p class="book-name">大白-戳戳我抱抱你</p>
                                                     <a href="javascript:;" class="book-desc"><p>大白(.<.)吧啦啦啦~小米主题和迪士尼<br/>首度合作，打造精品迪士尼系列主题</p></a>
                                                     <p class="book-prise">15米币</p>
-                                                    <img src="../img/theme-3.png">
+                                                    <img src="../img/theme-3.png" alt="dabai">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                 <div class="theme-4">
@@ -1006,7 +1007,7 @@
                                                     <p class="book-name">前往MIUI主题市场</p>
                                                     <a href="javascript:;" class="book-desc">众多个性主题，百变锁屏与自由桌面<br>让你的手机与众不同!</a>
                                                     <p class="book-prise">12米币</p>
-                                                    <img src="../img/theme-4.png">
+                                                    <img src="../img/theme-4.png" alt="gengduo">
                                                     <div class="fill-in"></div>
                                                 </div>
                                             </div>
@@ -1025,14 +1026,14 @@
                                                     <p class="title">游戏</p>
                                                     <p class="book-name">剑侠世界2</p>
                                                     <a href="javascript:;" class="book-desc less-space">潮流武侠，炫动江湖！</a>
-                                                    <img src="../img/footer-3.png">
+                                                    <img src="../img/footer-3.png" alt="剑侠世界2">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                   <div class="game-2">
                                                     <p class="title">游戏</p>
                                                     <p class="book-name">小米超神</p>
                                                     <a href="javascript:;" class="book-desc less-space">实力派，一起团！！</a>
-                                                    <img src="../img/game-2.png">
+                                                    <img src="../img/game-2.png" alt="小米超神">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                 <div class="game-3">
@@ -1040,7 +1041,7 @@
                                                     <p class="book-name">Forest</p>
                                                     <a href="javascript:;" class="book-desc">帮助您赚信誉生活中的每个重要时刻！</a>
                                                     <p class="book-prise">免费</p>
-                                                    <img src="../img/game-3.png">
+                                                    <img src="../img/game-3.png" alt="Forest">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                 <div class="game-4">
@@ -1048,7 +1049,7 @@
                                                     <p class="book-name">前往小米游戏商店</p>
                                                     <a href="javascript:;" class="book-desc">免费下载海量的手机游戏<br>天天都有现金福利赠送</a>
                                                     <p class="book-prise">免费</p>
-                                                    <img src="../img/game-4.png">
+                                                    <img src="../img/game-4.png" alt="前往小米游戏商店">
                                                     <div class="fill-in"></div>
                                                 </div>
                                             </div>
@@ -1068,7 +1069,7 @@
                                                     <p class="title">运用</p>
                                                     <p class="book-name">2017金米奖</p>
                                                     <a href="javascript:;" class="book-desc less-space">最优秀的运用和游戏</a>
-                                                    <img src="../img/footer-4.png">
+                                                    <img src="../img/footer-4.png" alt="2017金米奖">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                 <div class="app-2">
@@ -1076,7 +1077,7 @@
                                                     <p class="book-name">Forest</p>
                                                     <a href="javascript:;" class="book-desc">帮助您赚信誉生活中的每个重要时刻！</a>
                                                     <p class="book-prise">免费</p>
-                                                    <img src="../img/app-2.png">
+                                                    <img src="../img/app-2.png" alt="Forest">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                 <div class="app-3">
@@ -1084,7 +1085,7 @@
                                                     <p class="book-name">小米运用</p>
                                                     <a href="javascript:;" class="book-desc">小米出品，必属精品</a>
                                                     <p class="book-prise">免费</p>
-                                                    <img src="../img/app-3.png">
+                                                    <img src="../img/app-3.png" alt="小米运用">
                                                     <div class="fill-in"></div>
                                                 </div>
                                                 <div class="book-2">
@@ -1092,7 +1093,7 @@
                                                     <p class="book-name">前往小米运用商店</p>
                                                     <a href="javascript:;" class="book-desc">帮助小米手机和其他安卓手机用户<br>发现好用的安卓运用</a>
                                                     <p class="book-prise">免费</p>
-                                                    <img src="../img/app-4.png">
+                                                    <img src="../img/app-4.png" alt="前往小米运用商店">
                                                     <div class="fill-in"></div>
                                                 </div>
                                             </div>
@@ -1118,7 +1119,7 @@
                                                 <div class="screen3_navbtn">
                                                     <ul class="clearfix screen3_navbtns">
                                                         <li><a href="javascript:;">查看更多</a></li>
-                                                        <li><a href="javascript:;"><img src="../img/more.png"></a></li>
+                                                        <li><a href="javascript:;"><img src="../img/more.png" alt="查看更多"></a></li>
                                                     </ul>
                                                 </div>
                                                 <!-- ==========================导航栏结束 ============================================-->
@@ -1243,7 +1244,13 @@
             <!-- ============================footer_bottom start=====================================-->
             <div class="footer_bottom">
                 <img src="../img/logo.png" class="logo">
-                <p><a href=""><span>小米商城 | </span></a><a href=""><span>MIUI | </span></a><a href=""><span>米家 |</span></a><a href=""><span>米聊 | </span></a><a href=""><span>多看 | </span></a><a href=""><span>路由器 | </span></a><a href=""><span>米粉卡 | </span></a><a href=""><span>小米天猫店 | </span></a><a href=""><span>隐私政策 | </span></a><a href=""><span>问题反馈 | </span></a><a href=""><span>Select Region | </span></a><br><a href=""><span>@mi.com</span></a> <span>京ICP备10046444号</span> <a href=""><span>京公安网安备11011802020134号 </span></a><a><span>京网文[2014]0059-0009号 | </span></a><br><span>违法和不良信息举报电话：185-0130-1238，本网站所属，除特殊说明，所有数据均出自我司实验室测试</span>
+                <p><a href=""><span>小米商城 | </span></a><a href=""><span>MIUI | </span></a><a href=""><span>米家 |</span></a>
+                    <a href=""><span>米聊 | </span></a><a href=""><span>多看 | </span></a><a href=""><span>路由器 | </span></a>
+                    <a href=""><span>米粉卡 | </span></a><a href=""><span>小米天猫店 | </span></a>
+                    <a href=""><span>隐私政策 | </span></a><a href=""><span>问题反馈 | </span></a>
+                    <a href=""><span>Select Region | </span></a><br><a href=""><span>@mi.com</span></a> 
+                    <span>京ICP备10046444号</span> <a href=""><span>京公安网安备11011802020134号 </span></a>
+                    <a><span>京网文[2014]0059-0009号 | </span></a><br><span>违法和不良信息举报电话：185-0130-1238，本网站所属，除特殊说明，所有数据均出自我司实验室测试</span>
                 </p> 
                 <div class="icons">
                     <i class="icon1"></i>
@@ -1264,8 +1271,9 @@
             <!-- ============================main容器内容结束=========================================-->
                         
                     </div>
+                </div>
             <!--==============================总容器结束！============================================-->
                     <script type="text/javascript">                       
                    </script>
-               </body>
-               </html>
+    </body>
+</html>

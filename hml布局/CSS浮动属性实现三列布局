@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用浮动实现中间自适应布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            width: 100%;
+            height: 400px;
+            background: #00ff66;
+            vertical-align: middle;
+        }
+        .left{
+            float: left;
+            width: 200px;
+            height: 400px;
+            background: #006633;
+        }
+        .right{
+            float: right;
+            width: 200px;
+            height: 400px;
+            background: #3399ff; 
+        }
+        .center{
+            margin: 0 200px;
+            background: #996666;
+            height: 400px;
+        }
+        p{
+            line-height:auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="left">
+            <p>left</p>
+        </div>
+        <div class="right">
+            <p>right</p>
+        </div>
+        <div class="center">
+            <p>center</p>
+        </div>
+    </div>
+</body>
+</html>

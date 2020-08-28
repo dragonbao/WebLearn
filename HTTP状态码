@@ -1,0 +1,14 @@
+HTTP(HyperText Transfer Protocol)【超文本传输协议】作用于应用层.
+状态码：
+        200 OK(请求成功,其后是对GET和POST请求的应答文档)
+        400 Bad Request(服务器未能理解请求)
+        401 Unauthorized(被请求的页面需要用户名和密码.)
+        401.1 (登录失败)
+        403 Forbidden (对被请求页面的访问被禁)
+        404 Not Found (服务器无法找到被请求的页面)
+        410 Gone (被请求的页面不可用)
+        417 Expectation Failed (执行失败)
+        500 Internal Server Error (请求未完成。服务器遇到不可预知的情况)
+        501 Not Implemented (请求未完成。服务器不支持所请求的功能)
+        504 Gateway Timeout (网关超时)
+        503 Service Unavailable (请求未完成。服务器临时过载或宕机)

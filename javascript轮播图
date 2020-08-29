@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lun bo tu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .contain{
+            width: 800px;
+            height:600px;
+            margin: 0 auto;
+            background: #b6c911;
+            overflow: hidden;
+        }
+        .content{
+            /* float: left; */
+            width: 2400px;
+            height:600px;
+            background: #00ee66;
+            margin-left: 0;
+            /* overflow: hidden; */
+        }
+        .pic1{
+            float: left;
+            width: 800px;
+            height:600px;
+            /* margin-left: -800px; */
+            /* margin: 0 auto; */
+            background:red;
+        }
+        .pic2{
+            float: left;
+            width: 800px;
+            height:600px;
+            /* margin-left: -800px; */
+            /* margin: 0 auto; */
+            background:green;
+        }
+        .pic3{
+            float: left;
+            width: 800px;
+            height:600px;
+            /* margin: 0 auto; */
+            /* margin-left: -1600px; */
+            background: blue;
+            zoom: -1;
+        }
+        @keyframes Mymove{
+            from{margin-left:0;}
+            to{margin-left: -800px;}
+         }
+         @keyframes Mymove2{
+            from{margin-left:0;}
+            to{margin-left: -2400px;}
+         }
+    </style>
+</head>
+<body>
+    <div class="contain">
+            <div class="content">
+                <div class="pic1"></div>
+                <div class="pic2"></div>
+                <div class="pic3"></div>
+            </div>
+    </div>
+    <script>
+        window.onload = function(){
+            var pic1 = document.getElementsByClassName("pic1")[0]
+            var pic2 = document.getElementsByClassName("pic2")[0]
+            var pic3 = document.getElementsByClassName("pic3")[0]
+            var content = document.getElementsByClassName("content")[0]
+            function myMove(){
+                var marginLeft = parseInt(window.getComputedStyle(content,'margin-Left')['margin-left']);
+                if(marginLeft>-1600){
+                    content.style.marginLeft = marginLeft -800 + "px";
+                    setTimeout(() => {
+                        myMove()
+                    }, 2000);
+                }
+                //源生JS获取CSS属性值:
+                    //ele = document.getElementByClassName("content")[0];
+                    //var marginLeft = ele.style.marginLeft; //只能获取写在标签内的CSS属性。
+                    //获取CSS样式表内的CSS属性，可使用window.getComputedStyle<此处没有.号>(ele,伪类，没有可以不写)[attr]======不适用于IE<=8;
+                    //或者低版本IE使用 ele.currentStyle（marginLeft）
+                console.log(marginLeft);
+            }
+            setTimeout(() => {
+                // content.style.marginLeft = "-800px"
+                myMove()
+            }, 2000);
+
+            // pic2.style.marginLeft = "-800px"
+        //     setTimeout(() => {
+        //          pic3.style.animation = "Mymove2 6s infinite" // 三阶段：
+        //                                                     // 阶段一：margin-left在 0 到 -800 时，依然不会显示pic3的内容
+        //                                                     // 阶段二：margin-left在 -800 到 -1600。此阶段开始完成pic3的内容
+        //                                                     // 阶段三：margin-left在 -1600 到 -2400，此时pic3已经超出母盒2400的范围，此时显示pic1的内容
+        //                                                     // 阶段四：margin-left重回 0 ，所以一个过程中看起来像是pic1无缝连接，实际上是pic3有一个超出母盒过程占了一个时段
+        //         // setTimeout(() => {
+        //         //     pic2.style.animation = "Mymove 2s"
+        //         // }, 2000);
+        //     }, 2000);
+        }
+    </script>
+</body>
+</html>
